@@ -1,0 +1,7 @@
+.metadata/
+target/
+node_modules/
+.env
+application-dev.properties
+.idea/
+*.log

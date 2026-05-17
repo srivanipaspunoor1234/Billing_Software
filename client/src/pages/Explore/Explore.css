@@ -1,0 +1,56 @@
+.explore-container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    height:calc(100vh - 70px);
+    background-color:#2c3335;
+}
+
+/* LEFT COLUMN */
+
+.left-column{
+    flex:0.7;
+    border:1px solid #ccc;
+    border-radius:8px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+.first-row{
+    flex:0.3;
+    overflow-y:auto;
+}
+
+.second-row{
+    flex:0.7;
+    overflow-y:auto;
+}
+
+.horizontal-line{
+    margin:20px 0;
+    border-top:1px solid white;
+}
+
+
+/* RIGHT COLUMN */
+
+.right-column{
+    flex:0.3;
+    border:1px solid white;
+    border-radius:8px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    overflow-y:auto;
+}
+
+.customer-form-container{
+    margin-bottom:10px;
+}
+
+.cart-items-container{
+    max-height:300px;
+    overflow-y:auto;
+}

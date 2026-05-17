@@ -1,0 +1,104 @@
+/* Background */
+.login-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: 
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url("src/assets/login-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Premium Glass Card */
+.card {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 30px 70px rgba(0, 0, 0, 0.18),
+    0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.card-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Subtitle */
+.card-text {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+/* Premium focus glow */
+.form-control:focus {
+  border-color: #111;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Button */
+.btn-dark {
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 16px;
+
+  background: linear-gradient(135deg, #111, #333);
+  border: none;
+
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-dark:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #000, #222);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Smooth appearance animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeUp 0.6s ease forwards;
+}

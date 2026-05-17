@@ -1,0 +1,13 @@
+.cart-summary-container{
+    margin-top:20px;
+    padding:10px;
+    border-top:1px solid white;
+}
+
+.cart-summary-details{
+    margin-top:10px;
+}
+
+.cart-summary-container button{
+    margin-top:10px;
+}
